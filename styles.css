@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+}
+
+.container-fluid {
+  background-color: black;
+  border-bottom: 2px solid white;
+  height: 66px;
+}
+#navbarNav {
+  justify-content: end;
+}
+.nav-but {
+  background-color: black;
+  border: 1px solid black;
+}
+
+.first-section {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.main-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+.head-text {
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 1.4;
+  animation-name: changeColor;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: 45;
+}
+@keyframes changeColor {
+  from {
+    color: white;
+  }
+  to {
+    color: black;
+  }
+}
+.laptop-image {
+  height: 300px;
+  width: 600px;
+}
+.arrow-div {
+  text-align: center;
+}
+
+.aboutUs {
+  padding-top: 60px;
+}
+.about-heading {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: start;
+}
+.about-para {
+  text-align: start;
+}
+.about-img {
+  width: 400px;
+  height: 500px;
+}
+
+.our-service {
+  padding: 80px 50px;
+}
+.main-head {
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-size: 50px;
+  padding-left: 50px;
+}
+.main {
+  margin-top: 70px;
+  margin-bottom: 100px;
+  background-color: white;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 80px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding-left: 50px;
+}
+.child {
+  height: 300px;
+  width: 450px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 30px 15px;
+}
+.child:hover {
+  box-shadow: inset 800px 0 0 0 black;
+  color: white;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.service-para {
+  font-size: large;
+}
+
+.footer {
+  padding: 100px 0;
+  color: white;
+  background-color: black;
+}
+.contact-head {
+  font-weight: 700;
+  font-size: 70px;
+}
+.inp {
+  width: 100%;
+  text-align: start;
+  background-color: black;
+  border: 1px solid white;
+  height: 50px;
+  padding-left: 10px;
+  color: white;
+}
+::placeholder {
+  color: white;
+  opacity: 1;
+  font-weight: 300;
+}
+.contact-btn {
+  width: 160px;
+  height: 35px;
+}
+
+@media screen and (max-width: 1400px) {
+  .laptop-image {
+    height: 200px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .head-text {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .about-para {
+    font-size: medium;
+  }
+  .about-img {
+    text-align: center;
+  }
+  .about-heading {
+    text-align: center;
+  }
+  .main-head {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 920px) {
+  .first-section {
+    padding-top: 70px;
+  }
+  .head-text {
+    font-size: 70px;
+  }
+  .laptop-image {
+    height: 150px;
+    width: 300px;
+  }
+  .arrow-image {
+    height: 30px;
+    width: 15px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .about-para {
+    font-size: small;
+  }
+  .first-section {
+    padding-top: 60px;
+  }
+  .main-page {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .laptop-image {
+    height: 120px;
+    width: 240px;
+  }
+  .arrow-image {
+    height: 25px;
+    width: 13px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contact-head {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-head {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .main-head {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .first-section {
+    padding-top: 50px;
+  }
+
+  .head-text {
+    font-size: 50px;
+  }
+  .laptop-image {
+    height: 100px;
+    width: 200px;
+  }
+  .arrow-image {
+    height: 20px;
+    width: 10px;
+  }
+  .about-img {
+    width: 300px;
+    height: 420px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .about-img {
+    width: 290px;
+    height: 400px;
+  }
+}
